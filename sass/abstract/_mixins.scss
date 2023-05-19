@@ -1,0 +1,62 @@
+// Breakpoints
+@mixin responsive($breakpoint) {
+  @if ($breakpoint == desktop-big) {
+    @media screen and (min-width: 85.43em) {
+      // 1367px
+      @content;
+    }
+  }
+
+  @if ($breakpoint == tab-land) {
+    @media screen and (max-width: 75em) {
+      // 1200px
+      @content;
+    }
+  }
+
+  @if ($breakpoint == tab-port) {
+    @media screen and (max-width: 56.25em) {
+      // 900px
+      @content;
+    }
+  }
+
+  @if ($breakpoint == mobile-port) {
+    @media screen and (max-width: 37.5em) {
+      // 600px
+      @content;
+    }
+  }
+
+  @if ($breakpoint == mobile-small) {
+    @media screen and (max-width: 22.5em) {
+      // 360px
+      @content;
+    }
+  }
+
+  @if ($breakpoint == mobile-tiny) {
+    @media screen and (max-width: 17.5em) {
+      // 280px
+      @content;
+    }
+  }
+}
+
+// Initializing Flex Layout
+@mixin flex-box($align, $justify, $display: flex) {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// For loop mixin
+@mixin columnLoop($size, $grid) {
+  @for $i from 1 through $grid {
+    $val: $grid / $i;
+
+    .col#{$size}-#{$i} {
+      width: calc((100% / $val) - $default-spacing);
+    }
+  }
+}

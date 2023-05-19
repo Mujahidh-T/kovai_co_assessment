@@ -1,0 +1,17 @@
+{
+  "name": "kovai_co_assessment",
+  "version": "1.0.0",
+  "description": "This HTML conversion was developed by Mujahidh for kovai.io assessment.",
+  "main": "index.js",
+  "scripts": {
+    "dev-server": "live-server",
+    "compile-sass": "sass sass/main.scss:css/styles.min.css --style=compressed --watch",
+    "start": "npm-run-all --parallel dev-server compile-sass"
+  },
+  "author": "Mujahidh",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.62.1"
+  }
+}

@@ -1,0 +1,51 @@
+.header {
+  width: calc(100% - 12rem);
+  position: absolute;
+  top: 0;
+  left: 6rem;
+  padding-top: 3rem;
+  z-index: 5;
+
+  &--logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: _color(dark);
+    display: inline-block;
+
+    @include responsive(mobile-port) {
+      display: block;
+      text-align: center;
+    }
+
+    span {
+      color: white;
+      background: _color(primary);
+    }
+  }
+
+  &__contact {
+    @include flex-box(center, flex-end);
+
+    @include responsive(mobile-port) {
+      justify-content: center;
+    }
+
+    &--icon {
+      width: 4rem;
+      height: 4rem;
+      @include flex-box(center, center);
+      margin-right: 1.5rem;
+      border: 1px solid _color(whitesmoke);
+      border-radius: 50%;
+
+      i {
+        color: _color(primary);
+      }
+    }
+
+    &--number {
+      font-size: 2rem;
+      color: _color(primary);
+    }
+  }
+}

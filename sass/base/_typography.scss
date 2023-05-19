@@ -1,0 +1,59 @@
+.heading {
+  font-family: "Roboto", sans-serif;
+  color: _color(darker);
+  margin-bottom: $default-spacing;
+
+  &--primary {
+    font-size: 6rem;
+    line-height: 7rem;
+
+    @include responsive(mobile-small) {
+      font-size: 4.5rem;
+      line-height: 5.5rem;
+    }
+
+    span {
+      position: relative;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 1.2rem;
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        background: lighten(_color(primary), 20%);
+        border-radius: 2px;
+        z-index: -1;
+
+        @include responsive(mobile-small) {
+          height: 1rem;
+        }
+      }
+    }
+  }
+
+  &--secondary {
+    font-size: 4rem;
+    line-height: 5rem;
+    text-transform: capitalize;
+  }
+
+  &--slug {
+    font-size: 1.4rem;
+    color: lighten(_color(darker), 80%);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &--card {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: _color(darker);
+  }
+}
+
+.paragraph {
+  margin-bottom: $default-spacing;
+}

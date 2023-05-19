@@ -1,0 +1,41 @@
+.accordion {
+  width: 90%;
+  position: relative;
+  padding: 2.5rem;
+  padding-left: 4rem;
+  margin: 0 auto 2rem;
+  background: white;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(_color(darker), 0.03);
+
+  &__icon {
+    position: absolute;
+    top: 2.5rem;
+    left: 2rem;
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__header {
+    cursor: pointer;
+  }
+
+  &--heading {
+    color: _color(darker);
+  }
+
+  &__body {
+    display: none;
+    margin-top: 2rem;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  &--content {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
+}

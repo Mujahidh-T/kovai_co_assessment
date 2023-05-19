@@ -1,0 +1,32 @@
+/**
+* Grids Object - (SASS MAPS)
+* $Size == -lg, -md...
+* $grid == 12, 10...
+*/
+$grids: (
+  12: "",
+  10: "--lg",
+  8: "--md",
+  4: "--sm",
+  1: "--xs",
+);
+
+// Spacing
+$default-spacing: 3rem;
+
+// Colors
+$colors: (
+  primary: #fe922f,
+  secondary: #2b6bff,
+  tertiary: #ff1c59,
+  whitesmoke: #e7e7e7,
+  dark: #29292b,
+  darker: #000000,
+
+  violet-light: #867da7,
+
+  green-primary: #0ad09d,
+
+  blue-sky: #7be6eb,
+  blue-backdrop: #f4f9ff,
+);

@@ -1,0 +1,27 @@
+.container {
+  width: 120rem;
+  margin: 0 auto;
+
+  @include responsive(desktop-big) {
+    width: 90%;
+  }
+
+  @include responsive(tab-land) {
+    width: 90%;
+  }
+}
+
+.row {
+  width: calc(100% + #{$default-spacing});
+  @include flex-box(center, space-between);
+  flex-wrap: wrap;
+  margin-left: -($default-spacing / 2);
+
+  @include responsive(mobile-port) {
+    justify-content: center;
+  }
+}
+
+[class*="col-"] {
+  margin-bottom: $default-spacing;
+}

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@900&display=swap");
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem == 10px
+
+  @include responsive(desktop-big) {
+    font-size: 75%; // 1rem == 12px
+  }
+
+  @include responsive(tab-port) {
+    font-size: 50%; // 1rem == 8px
+  }
+
+  @include responsive(mobile-tiny) {
+    font-size: 37.5%; // 1rem == 6px
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: lighten(_color(dark), 30%);
+  line-height: 140%;
+  box-sizing: border-box;
+}
+
+i {
+  line-height: 0;
+}
+
+small {
+  font-size: 1.4rem;
+}
+
+::selection {
+  background: lighten(_color(green-primary), 40%);
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}

@@ -1,0 +1,57 @@
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    @include flex-box(center, center);
+    margin: 0 auto;
+    background: _color(secondary);
+    border-radius: 50%;
+
+    i {
+      color: white;
+    }
+  }
+
+  &__content {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    transition: left 0.5s ease;
+  }
+
+  &__control {
+    @include flex-box(center, flex-start);
+
+    &--previous,
+    &--next {
+      margin-right: 1rem;
+      cursor: pointer;
+
+      @include responsive(mobile-port) {
+        margin-right: 1.5rem;
+      }
+
+      i {
+        font-size: 2.4rem;
+        color: _color(darker);
+
+        @include responsive(mobile-port) {
+          font-size: 3.2rem;
+        }
+      }
+    }
+
+    &--disabled {
+      cursor: not-allowed;
+
+      i {
+        font-size: 1.8rem;
+        opacity: 0.3;
+      }
+    }
+  }
+}

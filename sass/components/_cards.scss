@@ -1,0 +1,63 @@
+.card {
+  &--check {
+    display: inline-block;
+    position: relative;
+    padding: 1.5rem 3.5rem 2rem 4.5rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(_color(darker), 0.1);
+
+    @include responsive(mobile-port) {
+      padding: 1.5rem 2rem;
+    }
+
+    &::after {
+      content: "";
+      width: 7rem;
+      height: 7rem;
+      position: absolute;
+      top: -3rem;
+      left: -3rem;
+      transform-origin: center;
+      background: _color(tertiary);
+      border-radius: 50%;
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    &-small {
+      font-size: 1.4rem;
+    }
+
+    &-content {
+      color: _color(darker);
+    }
+
+    &-icon {
+      font-size: 1.6rem;
+      color: white;
+      width: 3.5rem;
+      height: 3.5rem;
+      @include flex-box(center, center);
+      position: absolute;
+      left: -1.3rem;
+      top: -1.3rem;
+      background: _color(tertiary);
+      border-radius: 50%;
+      z-index: 5;
+    }
+  }
+
+  &__icon {
+    width: 10rem;
+    height: 10rem;
+    @include flex-box(center, center);
+    background: lighten(_color(primary), 35%);
+    border-radius: 2rem;
+
+    i {
+      font-size: 3.2rem;
+      color: darken(_color(violet-light), 25%);
+    }
+  }
+}

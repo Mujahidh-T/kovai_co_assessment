@@ -1,0 +1,30 @@
+// Generate Responsive Columns
+@each $grid, $size in $grids {
+  @if ($grid == 12) {
+    @include columnLoop($size, $grid);
+  }
+
+  @if ($grid == 10) {
+    @include responsive(tab-land) {
+      @include columnLoop($size, $grid);
+    }
+  }
+
+  @if ($grid == 8) {
+    @include responsive(tab-port) {
+      @include columnLoop($size, $grid);
+    }
+  }
+
+  @if ($grid == 4) {
+    @include responsive(mobile-port) {
+      @include columnLoop($size, $grid);
+    }
+  }
+
+  @if ($grid == 1) {
+    @include responsive(mobile-small) {
+      @include columnLoop($size, $grid);
+    }
+  }
+}

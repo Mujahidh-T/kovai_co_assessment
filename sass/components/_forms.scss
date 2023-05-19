@@ -1,0 +1,21 @@
+.form {
+  &--input {
+    font-size: 1.2rem;
+    width: 80%;
+    height: 4rem;
+    padding: 1rem;
+    margin: 0 auto 1.5rem;
+    background: lighten(_color(whitesmoke), 8%);
+    border: 2px solid _color(whitesmoke);
+    border-radius: 4px;
+
+    @include responsive(mobile-port) {
+      width: 100%;
+    }
+
+    &:focus-visible {
+      outline: 0;
+      border-color: lighten(_color(primary), 25%);
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.shape {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+
+  &__dotted {
+    &--big {
+      box-shadow: 0.5rem 0.5rem, 2.5rem 0.5rem, 4.5rem 0.5rem, 6.5rem 0.5rem,
+        8.5rem 0.5rem, 10.5rem 0.5rem, 12.5rem 0.5rem, 14.5rem 0.5rem,
+        16.5rem 0.5rem, 18.5rem 0.5rem, 20.5rem 0.5rem, 22.5rem 0.5rem,
+        24.5rem 0.5rem, 26.5rem 0.5rem, 28.5rem 0.5rem, 0.5rem 2.5rem,
+        2.5rem 2.5rem, 4.5rem 2.5rem, 6.5rem 2.5rem, 8.5rem 2.5rem,
+        10.5rem 2.5rem, 12.5rem 2.5rem, 14.5rem 2.5rem, 16.5rem 2.5rem,
+        18.5rem 2.5rem, 20.5rem 2.5rem, 22.5rem 2.5rem, 24.5rem 2.5rem,
+        26.5rem 2.5rem, 28.5rem 2.5rem, 0.5rem 4.5rem, 2.5rem 4.5rem,
+        4.5rem 4.5rem, 6.5rem 4.5rem, 8.5rem 4.5rem, 10.5rem 4.5rem,
+        12.5rem 4.5rem, 14.5rem 4.5rem, 16.5rem 4.5rem, 18.5rem 4.5rem,
+        20.5rem 4.5rem, 22.5rem 4.5rem, 24.5rem 4.5rem, 26.5rem 4.5rem,
+        28.5rem 4.5rem, 0.5rem 6.5rem, 2.5rem 6.5rem, 4.5rem 6.5rem,
+        6.5rem 6.5rem, 8.5rem 6.5rem, 10.5rem 6.5rem, 12.5rem 6.5rem,
+        14.5rem 6.5rem, 16.5rem 6.5rem, 18.5rem 6.5rem, 20.5rem 6.5rem,
+        22.5rem 6.5rem, 24.5rem 6.5rem, 26.5rem 6.5rem, 28.5rem 6.5rem,
+        0.5rem 8.5rem, 2.5rem 8.5rem, 4.5rem 8.5rem, 6.5rem 8.5rem,
+        8.5rem 8.5rem, 10.5rem 8.5rem, 12.5rem 8.5rem, 14.5rem 8.5rem,
+        16.5rem 8.5rem, 18.5rem 8.5rem, 20.5rem 8.5rem, 22.5rem 8.5rem,
+        24.5rem 8.5rem, 26.5rem 8.5rem, 28.5rem 8.5rem, 0.5rem 10.5rem,
+        2.5rem 10.5rem, 4.5rem 10.5rem, 6.5rem 10.5rem, 8.5rem 10.5rem,
+        10.5rem 10.5rem, 12.5rem 10.5rem, 14.5rem 10.5rem, 16.5rem 10.5rem,
+        18.5rem 10.5rem, 20.5rem 10.5rem, 22.5rem 10.5rem, 24.5rem 10.5rem,
+        26.5rem 10.5rem, 28.5rem 10.5rem, 0.5rem 12.5rem, 2.5rem 12.5rem,
+        4.5rem 12.5rem, 6.5rem 12.5rem, 8.5rem 12.5rem, 10.5rem 12.5rem,
+        12.5rem 12.5rem, 14.5rem 12.5rem, 16.5rem 12.5rem, 18.5rem 12.5rem,
+        20.5rem 12.5rem, 22.5rem 12.5rem, 24.5rem 12.5rem, 26.5rem 12.5rem,
+        28.5rem 12.5rem, 0.5rem 14.5rem, 2.5rem 14.5rem, 4.5rem 14.5rem,
+        6.5rem 14.5rem, 8.5rem 14.5rem, 10.5rem 14.5rem, 12.5rem 14.5rem,
+        14.5rem 14.5rem, 16.5rem 14.5rem, 18.5rem 14.5rem, 20.5rem 14.5rem,
+        22.5rem 14.5rem, 24.5rem 14.5rem, 26.5rem 14.5rem, 28.5rem 14.5rem,
+        0.5rem 16.5rem, 2.5rem 16.5rem, 4.5rem 16.5rem, 6.5rem 16.5rem,
+        8.5rem 16.5rem, 10.5rem 16.5rem, 12.5rem 16.5rem, 14.5rem 16.5rem,
+        16.5rem 16.5rem, 18.5rem 16.5rem, 20.5rem 16.5rem, 22.5rem 16.5rem,
+        24.5rem 16.5rem, 26.5rem 16.5rem, 28.5rem 16.5rem, 0.5rem 18.5rem,
+        2.5rem 18.5rem, 4.5rem 18.5rem, 6.5rem 18.5rem, 8.5rem 18.5rem,
+        10.5rem 18.5rem, 12.5rem 18.5rem, 14.5rem 18.5rem, 16.5rem 18.5rem,
+        18.5rem 18.5rem, 20.5rem 18.5rem, 22.5rem 18.5rem, 24.5rem 18.5rem,
+        26.5rem 18.5rem, 28.5rem 18.5rem, 0.5rem 20.5rem, 2.5rem 20.5rem,
+        4.5rem 20.5rem, 6.5rem 20.5rem, 8.5rem 20.5rem, 10.5rem 20.5rem,
+        12.5rem 20.5rem, 14.5rem 20.5rem, 16.5rem 20.5rem, 18.5rem 20.5rem,
+        20.5rem 20.5rem, 22.5rem 20.5rem, 24.5rem 20.5rem, 26.5rem 20.5rem,
+        28.5rem 20.5rem, 0.5rem 22.5rem, 2.5rem 22.5rem, 4.5rem 22.5rem,
+        6.5rem 22.5rem, 8.5rem 22.5rem, 10.5rem 22.5rem, 12.5rem 22.5rem,
+        14.5rem 22.5rem, 16.5rem 22.5rem, 18.5rem 22.5rem, 20.5rem 22.5rem,
+        22.5rem 22.5rem, 24.5rem 22.5rem, 26.5rem 22.5rem, 28.5rem 22.5rem,
+        0.5rem 24.5rem, 2.5rem 24.5rem, 4.5rem 24.5rem, 6.5rem 24.5rem,
+        8.5rem 24.5rem, 10.5rem 24.5rem, 12.5rem 24.5rem, 14.5rem 24.5rem,
+        16.5rem 24.5rem, 18.5rem 24.5rem, 20.5rem 24.5rem, 22.5rem 24.5rem,
+        24.5rem 24.5rem, 26.5rem 24.5rem, 28.5rem 24.5rem, 0.5rem 26.5rem,
+        2.5rem 26.5rem, 4.5rem 26.5rem, 6.5rem 26.5rem, 8.5rem 26.5rem,
+        10.5rem 26.5rem, 12.5rem 26.5rem, 14.5rem 26.5rem, 16.5rem 26.5rem,
+        18.5rem 26.5rem, 20.5rem 26.5rem, 22.5rem 26.5rem, 24.5rem 26.5rem,
+        26.5rem 26.5rem, 28.5rem 26.5rem, 0.5rem 28.5rem, 2.5rem 28.5rem,
+        4.5rem 28.5rem, 6.5rem 28.5rem, 8.5rem 28.5rem, 10.5rem 28.5rem,
+        12.5rem 28.5rem, 14.5rem 28.5rem, 16.5rem 28.5rem, 18.5rem 28.5rem,
+        20.5rem 28.5rem, 22.5rem 28.5rem, 24.5rem 28.5rem, 26.5rem 28.5rem,
+        28.5rem 28.5rem, 0.5rem 30.5rem, 2.5rem 30.5rem, 4.5rem 30.5rem,
+        6.5rem 30.5rem, 8.5rem 30.5rem, 10.5rem 30.5rem, 12.5rem 30.5rem,
+        14.5rem 30.5rem, 16.5rem 30.5rem, 18.5rem 30.5rem, 20.5rem 30.5rem,
+        22.5rem 30.5rem, 24.5rem 30.5rem, 26.5rem 30.5rem, 28.5rem 30.5rem,
+        0.5rem 32.5rem, 2.5rem 32.5rem, 4.5rem 32.5rem, 6.5rem 32.5rem,
+        8.5rem 32.5rem, 10.5rem 32.5rem, 12.5rem 32.5rem, 14.5rem 32.5rem,
+        16.5rem 32.5rem, 18.5rem 32.5rem, 20.5rem 32.5rem, 22.5rem 32.5rem,
+        24.5rem 32.5rem, 26.5rem 32.5rem, 28.5rem 32.5rem, 0.5rem 34.5rem,
+        2.5rem 34.5rem, 4.5rem 34.5rem, 6.5rem 34.5rem, 8.5rem 34.5rem,
+        10.5rem 34.5rem, 12.5rem 34.5rem, 14.5rem 34.5rem, 16.5rem 34.5rem,
+        18.5rem 34.5rem, 20.5rem 34.5rem, 22.5rem 34.5rem, 24.5rem 34.5rem,
+        26.5rem 34.5rem, 28.5rem 34.5rem;
+    }
+
+    &--small {
+      box-shadow: 0.5rem 0.5rem _color(darker), 2.5rem 0.5rem _color(darker),
+        4.5rem 0.5rem _color(darker), 6.5rem 0.5rem _color(darker),
+        8.5rem 0.5rem _color(darker), 0.5rem 2.5rem _color(darker),
+        2.5rem 2.5rem _color(darker), 4.5rem 2.5rem _color(darker),
+        6.5rem 2.5rem _color(darker), 8.5rem 2.5rem _color(darker),
+        0.5rem 4.5rem _color(darker), 2.5rem 4.5rem _color(darker),
+        4.5rem 4.5rem _color(darker), 6.5rem 4.5rem _color(darker),
+        8.5rem 4.5rem _color(darker), 0.5rem 6.5rem _color(darker),
+        2.5rem 6.5rem _color(darker), 4.5rem 6.5rem _color(darker),
+        6.5rem 6.5rem _color(darker), 8.5rem 6.5rem _color(darker);
+    }
+  }
+
+  &__circle {
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    transform: rotate(120deg);
+    background: linear-gradient(transparent 50%, _color(violet-light) 51%);
+    border-radius: 50%;
+    opacity: 0.8;
+
+    &--overlap {
+      width: 5.5rem;
+      height: 5.5rem;
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      border: 2px solid _color(darker);
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-radius: 50%;
+    }
+  }
+
+  &__linear {
+    &-gradient {
+      width: 6rem;
+      height: 12rem;
+      position: relative;
+      background: repeating-linear-gradient(
+        -45deg,
+        lighten(_color(tertiary), 30%),
+        lighten(_color(tertiary), 30%) 1rem,
+        lighten(_color(tertiary), 10%) 1.1rem,
+        lighten(_color(tertiary), 10%) 1.3rem
+      );
+      border-top-left-radius: 10rem;
+      opacity: 0.8;
+    }
+  }
+}
